@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp" >
+    
+	<TextView
+        android:id="@+id/textView_username"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="username" />
+	
+	<EditText
+        android:id="@+id/editText_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_username"
+        android:hint="username"
+        android:minHeight="48dp" />
+	
+	<TextView
+        android:id="@+id/textView_password"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_username"
+        android:text="password" />
+	
+	<EditText
+        android:id="@+id/editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_password"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+    
+	<EditText
+        android:id="@+id/editText_passwordRetype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_password"
+        android:hint="password_retype"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+	<Button
+	    android:id="@+id/btnRegister"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/editText_passwordRetype"
+	    android:layout_below="@+id/editText_passwordRetype"
+	    android:text="Register" />
+
+</RelativeLayout>
